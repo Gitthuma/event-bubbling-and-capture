@@ -14,4 +14,10 @@ btn.onclick = function() {
 
 videoBox.onclick = function() {
     videoBox.setAttribute('class', 'hidden');
-}
+};
+
+/*Create a function, that when the video itself is selected, the video should start to play.*/
+
+video.onclick = function() {
+    video.play();
+};
