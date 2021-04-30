@@ -9,3 +9,9 @@ const video = document.querySelector('video');
 btn.onclick = function() {
     videoBox.setAttribute('class', 'showing');
 }
+
+/*Create a function, that when the area of the <div>(videoBox) outside the video is selected, the box should be hidden*/
+
+videoBox.onclick = function() {
+    videoBox.setAttribute('class', 'hidden');
+}
