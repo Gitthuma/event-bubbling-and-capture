@@ -18,6 +18,9 @@ videoBox.onclick = function() {
 
 /*Create a function, that when the video itself is selected, the video should start to play.*/
 
-video.onclick = function() {
+/*Fix the bubbling problem by adding stopPropagation() which, when invoked on a handler's event object, makes it so that first handler is run but the event doesn't bubble any further up the chain, so no more handlers will be run.*/
+
+video.onclick = function(e) {
+    e.stopPropagation();
     video.play();
 };
